@@ -49,5 +49,7 @@ public class CameraFollow : MonoBehaviour {
     }
 
     private void OnDrawGizmos() {
+        if (!player) { FindPlayer(); }
+        MoveCamera();
     }
 }
